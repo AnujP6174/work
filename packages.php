@@ -83,13 +83,13 @@
     <!-- Sidebar start -->
     <div class="sidebar">
         <a href="home"><i class="fas fa-home"></i><span>Home</span></a>
-        <a href="Packages"><i class="fas fa-dollar-sign"></i><span>Our Packages</span></a>
+        <a href="about"><i class="fas fa-address-card"></i><span>About Us</span></a>
         <a href="Register"><i class="fas fa-user-plus"></i><span>Register</span></a>
     </div>
     <!-- Sidebar ends -->
 
     <!-- packages cards starts -->
-    <div class="container" id="ques">
+    <div class="container-fluid">
         <h2 class="text-center">Our Packages</h2>
         <div class="row my-4">
             <div class="col-md-4 my-2">
@@ -98,6 +98,17 @@
                     <div class="card-body">
                         <h5 class="card-title">Maldives</h5>
                         <p class="card-text">Maldives is a very nice place with package of 1 week with beach-side resort.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-md-4 my-2">
+                <div class="card center" style="width: 18rem;">
+                    <img src="maldives.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dubai</h5>
+                        <p class="card-text">Dubai is a very nice place with package of 1 week with beach-side resort.</p>
                     </div>
                 </div>
             </div>

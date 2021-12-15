@@ -1,10 +1,3 @@
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    session_start();
-    $conn = mysqli_connect("localhost", "root", "", "tourism");
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,28 +45,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             <div class="container-fluid">
                 <?php
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                    // Creating connection for database
-                    $conn = mysqli_connect("localhost", "root", "", "tourism");
-                    $full = $_POST['Name'];
-                    $mobile = $_POST['Mobile'];
-                    $email = $_POST['Email'];
-                    $password = $_POST['Password'];
-                    $pw_hash = password_hash($password, PASSWORD_DEFAULT);
-
-                    $check_email_query = "SELECT Email FROM `register_tb` WHERE Email=$email";
-                    $check_email_result = mysqli_query($conn, $check_email_query) or die(mysqli_error($conn));
-                    $check_email_count = mysqli_num_rows($check_email_result);
-                    if ($check_email_count == 0) {
-                        $insert_info_db_query = "INSERT INTO `register_tb`(`Sr. No.`, `Name`, `Email`, `Mobile`, `Password`) VALUES (1,'$full','$email','$mobile','$pw_hash')";
-                        $insert_info_db_query_execute = mysqli_query($conn, $insert_info_db_query) or die(mysqli_error($conn));
+                    $conn = new mysqli('localhost', 'root', '', 'tourism');
+                    if ($conn->connect_error) {
+                        echo "$conn->connect_error";
+                        die("Connection Failed : " . $conn->connect_error);
+                    } else {
+                        // Creating connection for database
+                        $full = $_POST['Name'];
+                        $mobile = $_POST['Mobile'];
+                        $email = $_POST['Email'];
+                        $password = $_POST['Password'];
+                        $pw_hash = password_hash($password, PASSWORD_DEFAULT);
+                        
+                        $stmt = $conn->prepare("INSERT INTO `register_tb`(`Name`, `Email`, `Mobile`, `Password`) VALUES (?,?,?,?)");
+                        $stmt->bind_param("ssss", $full, $email, $mobile, $pw_hash);
+                        $execval = $stmt->execute();
                         echo '<div class="container-fluid alert alert-success alert-dismissible fade show" role="alert">
                         <center><strong>You are Registered Successfully!</strong></center>
                         </div>';
                         sleep(2);
-                    } else {
-                        echo '<div class="container-fluid alert alert-danger alert-dismissible fade show" role="alert">
-                        <center><strong>You are Already Registered!</strong></center>
-                        </div>';
+                        $stmt->close();
+                        $conn->close();
                     }
                 }
                 ?>
