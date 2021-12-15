@@ -43,6 +43,7 @@
         }
 
         .sidebar {
+            opacity: 60%;
             background: #BBB4CD;
             position: fixed;
             left: 0;
@@ -88,13 +89,16 @@
     <!-- Sidebar ends -->
 
     <!-- packages cards starts -->
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card center my-4" style="width: 18rem;">
-                <img src="maldives.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Maldives</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="container" id="ques">
+        <h2 class="text-center">Our Packages</h2>
+        <div class="row my-4">
+            <div class="col-md-4 my-2">
+                <div class="card center" style="width: 18rem;">
+                    <img src="maldives.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Maldives</h5>
+                        <p class="card-text">Maldives is a very nice place with package of 1 week with beach-side resort.</p>
+                    </div>
                 </div>
             </div>
         </div>
