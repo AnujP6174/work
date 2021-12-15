@@ -7,7 +7,7 @@
 }
 body {
   /* background: linear-gradient(120deg,#2980b9, #8e44ad); */
-  background-image: url('register.jpg');
+  background-image: url("https://source.unsplash.com/1600x900/?maldives,beach");
   height: 100vh;
   overflow: hidden;
 }
