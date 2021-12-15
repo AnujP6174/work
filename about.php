@@ -39,15 +39,12 @@
         }
 
         .sidebar {
+            opacity: 60%;
             background: #BBB4CD;
-            /* margin-top: 70px;
-            padding-top: 10px;*/
             position: fixed;
             left: 0;
-            width: 250px;
+            width: 200px;
             height: 100%;
-            /* transition: 0.5s;
-            transition-property: left; */
         }
 
         .sidebar h4 {
@@ -64,8 +61,6 @@
             text-decoration: none;
             padding-left: 40px;
             box-sizing: border-box;
-            transition: 0.5s;
-            transition-property: background;
         }
 
         .sidebar a:hover {

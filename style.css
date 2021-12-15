@@ -6,9 +6,14 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  /* background: linear-gradient(120deg,#2980b9, #8e44ad); */
-  background-image: url("https://source.unsplash.com/1600x900/?maldives,beach");
-  height: 100vh;
+  background-image: url("home3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 .center {
@@ -17,7 +22,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
-  background: #423B52;
+  background: #423b52;
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
 }
