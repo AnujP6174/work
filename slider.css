@@ -35,8 +35,8 @@ body
 	position:absolute;
 	width:500%;
 	margin:0px;
-	left:0;
-	animation:15s anuj infinite;	
+	left: 10px;
+	animation:20s anuj infinite;
 }
 
 @keyframes anuj

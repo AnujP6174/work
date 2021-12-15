@@ -19,6 +19,7 @@
             bottom: 0;
             width: 100%;
         }
+
         #top_nav {
             background-color: #333;
             overflow: hidden;
@@ -74,7 +75,10 @@
                 <img src="dubai.jpg" alt="">
             </div>
             <div class="slide">
-                <img src="bali.jpg" alt="">
+                <img src="thailand.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="singapore.jpg" alt="">
             </div>
         </figure>
     </div>
