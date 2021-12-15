@@ -10,7 +10,7 @@
     <title>Vaccy Tours & Travels</title>
 
     <style type="text/css">
-        .footer_nav {
+        #footer_nav {
             background-color: #333;
             overflow: hidden;
             position: fixed;
@@ -23,7 +23,7 @@
 <body>
     <header id="header">
         <!-- Navbar starts -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand">Vaccy Tours & Travels</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +35,13 @@
                             <a class="nav-link" aria-current="page" href="">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">About Us</a>
+                            <a class="nav-link" href="about">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Packages</a>
+                            <a class="nav-link" href="packages">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register">Register</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -51,8 +54,39 @@
         <!-- Navbar Ends -->
     </header>
 
+
+    <!-- slider starts-->
+    <div id="carouselExampleIndicators" class="container my-4 md-4carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="maldives.jpg" class="d-block w-100" alt="this is picture of maldives">
+            </div>
+            <div class="carousel-item">
+                <img src="dubai.jpg" class="d-block w-100" alt="this is picture of dubai">
+            </div>
+            <div class="carousel-item">
+                <img src="bali.jpg" class="d-block w-100" alt="this is picture of bali">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- slider ends-->
+
+
     <footer>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="footer_nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="footer_nav">
             <div class="container-fluid">
                 <a class="navbar-brand">Vaccy Tours & Travels</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,10 +98,13 @@
                             <a class="nav-link" aria-current="page" href="">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">About Us</a>
+                            <a class="nav-link" href="about">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Packages</a>
+                            <a class="nav-link" href="packages">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register">Register</a>
                         </li>
                     </ul>
                     <form class="d-flex">
