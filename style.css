@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-image: url("home3.jpg");
+  background-image: url("home.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,6 +34,7 @@ body {
 .center h2 {
   text-align: center;
   padding: 10px;
+  border-bottom: 1px solid silver;
 }
 .center form {
   padding: 0 40px;
