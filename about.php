@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>About Vaccy Tours & Travels</title>
     <style>
         body {
@@ -23,7 +24,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: auto;
-            background: whitesmoke;
+            background: #9CA1B2;
             border-radius: 10px;
             box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
         }
@@ -36,21 +37,88 @@
         .center h2 {
             padding: 5px;
         }
+
+        .sidebar {
+            background: #BBB4CD ;
+            /* margin-top: 70px;
+            padding-top: 10px;*/
+            position: fixed;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            /* transition: 0.5s;
+            transition-property: left; */
+        }
+
+        .sidebar h4 {
+            color: black;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            color: #fff;
+            display: block;
+            width: 100%;
+            line-height: 60px;
+            text-decoration: none;
+            padding-left: 40px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            transition-property: background;
+        }
+
+        .sidebar a:hover {
+            background: #19B3D3;
+        }
+
+        .sidebar i {
+            padding-right: 10px;
+        }
+
+        label #sidebar_btn {
+            z-index: 1;
+            color: #fff;
+            position: fixed;
+            cursor: pointer;
+            left: 300px;
+            font-size: 20px;
+            margin: 5px 0;
+            transition: 0.5s;
+            transition-property: color;
+        }
+
+        label #sidebar_btn:hover {
+            color: #19B3D3;
+        }
+
+        #check:checked~.sidebar {
+            left: -190px;
+        }
+
+        #check:checked~.sidebar a span {
+            display: none;
+        }
+
+        #check:checked~.sidebar a {
+            font-size: 20px;
+            margin-left: 170px;
+            width: 80px;
+        }
     </style>
 </head>
 
 <body>
     <!-- Sidebar start -->
     <div class="sidebar">
-        <a href="report"><i class="fas fa-tasks"></i><span>Progress Report</span></a>
-        <a href="about"><i class="fas fa-info-circle"></i><span>About You</span></a>
-        <a href="https://studde.com/"><i class="fas fa-video"></i><span>Lectures</span></a>
-        <a href="test"><i class="fas fa-graduation-cap"></i><span>Test Panel</span></a>
-        <a href="courses"><i class="fas fa-university"></i><span>Courses</span></a>
-        <a href="los"><i class="far fa-star"></i><span>Imp LOS</span></a>
-        <a href="logout"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+        <a href="home"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="Packages"><i class="fas fa-dollar-sign"></i><span>Our Packages</span></a>
+        <a href="Register"><i class="fas fa-user-plus"></i><span>Register</span></a>
     </div>
     <!-- Sidebar ends -->
+
+
+    <!-- about card starts -->
     <div class="container-fluid center">
         <h1>About Us</h2>
             <h6>Who we are & where do we stand</h6>
@@ -72,6 +140,7 @@
                 </p>
             </div>
     </div>
+    <!-- about card ends -->
 </body>
 
 </html>
