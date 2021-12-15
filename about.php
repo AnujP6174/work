@@ -39,7 +39,7 @@
         }
 
         .sidebar {
-            background: #BBB4CD ;
+            background: #BBB4CD;
             /* margin-top: 70px;
             padding-top: 10px;*/
             position: fixed;
@@ -57,7 +57,7 @@
         }
 
         .sidebar a {
-            color: #fff;
+            color: black;
             display: block;
             width: 100%;
             line-height: 60px;
@@ -69,41 +69,11 @@
         }
 
         .sidebar a:hover {
-            background: #19B3D3;
+            background: #BCF734;
         }
 
         .sidebar i {
             padding-right: 10px;
-        }
-
-        label #sidebar_btn {
-            z-index: 1;
-            color: #fff;
-            position: fixed;
-            cursor: pointer;
-            left: 300px;
-            font-size: 20px;
-            margin: 5px 0;
-            transition: 0.5s;
-            transition-property: color;
-        }
-
-        label #sidebar_btn:hover {
-            color: #19B3D3;
-        }
-
-        #check:checked~.sidebar {
-            left: -190px;
-        }
-
-        #check:checked~.sidebar a span {
-            display: none;
-        }
-
-        #check:checked~.sidebar a {
-            font-size: 20px;
-            margin-left: 170px;
-            width: 80px;
         }
     </style>
 </head>
